@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@300;400;600;700;900&family=Noto+Sans+JP:wght@400;700&family=Nunito:wght@400;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Roboto&family=Roboto+Mono:wght@700&display=swap");
+
+:root {
+  --primary-text: #3e3f43;
+  --secondary-text: rgba(4, 34, 34, 0.1);
+  --navbar-text: rgba(34, 34, 34, 0.75);
+  --primary-btn: #daa520;
+  --primary-bg: #f9bdbd;
+  --secondary-bg: #f7dea6;
+  --third-bg: #a8dcec;
+}
+body {
+  font-family: Nunito, Quicksand, Roboto, monospace;
+}
+section {
+  color: var(--secondary-text);
+}
+.navbar .navbar-brand {
+  margin-left: 80px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.25em;
+  color: var(--primary-text);
+  text-decoration: none;
+}
+.navbar .navbar-brand:hover {
+  color: var(--primary-btn);
+  transition: ease-out 0.2s;
+}
+.navbar-nav > .nav-item {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: var(--primary-btn) !important;
+  font-weight: 800;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--primary-btn) !important;
+}
+.secondary-button {
+  border: 1px solid var(--primary-text);
+  border-radius: 8px;
+  background-color: transparent;
+  font-weight: 700;
+  line-height: 22px;
+  color: var(--primary-text);
+  padding: 0.5rem 1.5rem;
+}
+.secondary-button:hover {
+  color: var(--primary-btn);
+  border-color: var(--primary-btn);
+}
+/* #AFAFAF email, SandraDevi
+313235 home
+#8D8D8D footer
+#333333 footer primary
+C4C4C4 previous
+#E5E5E5 buttons
+#FFC107 star */
+/* body {
+  background-color: aquamarine;
+  display: grid;
+  grid-template-areas:
+    "header header header header header"
+    "nav nav nav nav nav"
+    "section section section section"
+    "footer footer footer footer footer";
+}
+
+header {
+  background-color: blueviolet;
+  color: white;
+  grid-area: header;
+  height: 100px;
+}
+
+nav {
+  background-color: green;
+  color: white;
+  grid-area: nav;
+  height: 30px;
+}
+
+section {
+  grid-area: section;
+  background-color: lightgray;
+  min-height: 200px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  grid-area: footer;
+  height: 100px;
+} */
