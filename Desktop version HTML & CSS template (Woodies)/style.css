@@ -11,9 +11,13 @@
 }
 body {
   font-family: Nunito, Quicksand, Roboto, monospace;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  color: var(--primary-text) !important;
 }
 section {
-  color: var(--secondary-text);
+  margin: 0 100px;
 }
 .navbar .navbar-brand {
   margin-left: 80px;
@@ -30,8 +34,8 @@ section {
   transition: ease-out 0.2s;
 }
 .navbar-nav > .nav-item {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 23px;
+  margin-right: 23px;
 }
 .navbar-nav .nav-link.active,
 .navbar-nav .show > .nav-link {
@@ -55,46 +59,50 @@ section {
   color: var(--primary-btn);
   border-color: var(--primary-btn);
 }
-/* #AFAFAF email, SandraDevi
-313235 home
-#8D8D8D footer
-#333333 footer primary
-C4C4C4 previous
-#E5E5E5 buttons
-#FFC107 star */
-/* body {
-  background-color: aquamarine;
-  display: grid;
-  grid-template-areas:
-    "header header header header header"
-    "nav nav nav nav nav"
-    "section section section section"
-    "footer footer footer footer footer";
+
+.primary-button {
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-btn);
+  font-weight: 700;
+  line-height: 22px;
+  color: #ffffff;
+  text-transform: capitalize;
+  padding: 0.7rem 1.7rem;
+}
+.primary-button:hover {
+  color: var(--primary-btn);
+  background-color: transparent;
+  border: 1px solid var(--primary-btn);
+  transition: ease-out 0.2s;
 }
 
-header {
-  background-color: blueviolet;
-  color: white;
-  grid-area: header;
-  height: 100px;
+.pink-image {
+  right: 0;
+  position: absolute;
+  width: 370px;
+  height: 800px;
+  background-color: var(--primary-bg);
+  border-bottom-left-radius: 150px;
 }
 
-nav {
-  background-color: green;
-  color: white;
-  grid-area: nav;
-  height: 30px;
+/* HOME SECTION */
+.home-container {
+  margin-right: 0;
+  background: url(./img//home_img_1.png) right top no-repeat, url(/img/home_img_2.svg) 83% 40% no-repeat;
+  z-index: 2;
+  height: 100vh;
 }
 
-section {
-  grid-area: section;
-  background-color: lightgray;
-  min-height: 200px;
+.home-description {
+  width: 500px;
 }
 
-footer {
-  background-color: black;
-  color: white;
-  grid-area: footer;
-  height: 100px;
-} */
+.home-subtitle {
+  font-size: 36px;
+}
+.home-title {
+  font-size: 72px;
+  font-weight: 700;
+  color: #313235;
+}
