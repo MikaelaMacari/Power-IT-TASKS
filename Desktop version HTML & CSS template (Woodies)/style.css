@@ -2,7 +2,7 @@
 
 :root {
   --primary-text: #3e3f43;
-  --secondary-text: rgba(4, 34, 34, 0.1);
+  --secondary-text: rgba(34, 34, 34, 0.1);
   --navbar-text: rgba(34, 34, 34, 0.75);
   --primary-btn: #daa520;
   --primary-bg: #f9bdbd;
@@ -15,6 +15,7 @@ body {
   flex-direction: column;
   gap: 120px;
   color: var(--primary-text) !important;
+  background: url(/img/home_img_2.svg) -68px 95% no-repeat;
 }
 section {
   margin: 0 100px;
@@ -86,19 +87,38 @@ section {
   border-bottom-left-radius: 150px;
 }
 
+.section-title {
+  display: flex;
+  align-items: center;
+}
+.subtitle {
+  margin-right: 0.5em;
+  margin-left: 0.5em;
+  font-size: 36px;
+  font-weight: 700;
+}
+.title {
+  margin-left: 0.5em;
+  font-size: 72px;
+  color: var(--secondary-text);
+  font-weight: 800;
+}
+.title-line {
+  border: 1px solid #000000;
+  width: 55%;
+}
 /* HOME SECTION */
 .home-container {
   margin-right: 0;
-  background: url(./img//home_img_1.png) right top no-repeat, url(/img/home_img_2.svg) 83% 40% no-repeat;
-  z-index: 2;
-  height: 100vh;
+  background: url(./img/home_img_1.png) right top no-repeat, url(/img/home_img_2.svg) 83% 90% no-repeat;
+  z-index: 1;
+  height: 65vh;
 }
 
 .home-description {
   width: 500px;
 }
-
-.home-subtitle {
+.description {
   font-size: 36px;
 }
 .home-title {
@@ -106,3 +126,50 @@ section {
   font-weight: 700;
   color: #313235;
 }
+
+/* About Us SECTION */
+.about-us-container {
+  position: relative;
+  font-weight: 600px;
+  font-size: 24px;
+  margin-right: 0;
+  background: url(./img/who_we_are_section.png) 2.5% 40% no-repeat, url(./img/about_us_img_2.png) right bottom no-repeat;
+
+  height: 90vh;
+}
+.about-us-description-right {
+  width: 480px;
+  float: right;
+  margin-right: 100px;
+  margin-top: 150px;
+}
+.about-us-description-left {
+  margin-top: 30%;
+  width: 650px;
+}
+.yellow-container {
+  z-index: -1;
+  position: absolute;
+  width: 280px;
+  height: 400px;
+  background-color: var(--secondary-bg);
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+
+/*
+<section class="about-us-container">
+      <div class="section-title">
+        <img src="./img/logo.svg" alt="" />
+        <p class="subtitle">Who we are</p>
+        <div class="title-line"></div>
+        <p class="title">ABOUT US</p>
+      </div>
+      <div class="section-description">
+        <p class="description-subtitle"><strong> WOODIES</strong> is the <strong>home of modern wooden furniture</strong></p>
+        <p class="description">the answer to your need for furniture with shapes, sizes and colors.</p>
+        <p class="text-black">Customized furniture <strong> made just for you</strong></p>
+        <p>Get it easy to adjust furniture to the shape and size of your dwelling or business.</p>
+      </div>
+    </section>
+*/
