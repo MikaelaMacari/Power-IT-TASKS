@@ -10,17 +10,19 @@
   --third-bg: #a8dcec;
 }
 body {
+  background: url(/img/flower.png) 13% 31% no-repeat;
+}
+.wrapper {
+  position: relative;
   font-family: Nunito, Quicksand, Roboto, monospace !important;
   display: flex;
   flex-direction: column;
   color: var(--primary-text) !important;
-  background: url(/img/home_img_2.svg) 8% 29% no-repeat, url(/img/footer_img_1-removebg-preview.png) right bottom no-repeat;
+  background: url(/img/footer_img_1.png) right bottom no-repeat;
   box-sizing: border-box;
+  gap: 120px;
 }
 
-section {
-  margin: 100px 0;
-}
 .navbar .navbar-brand {
   font-style: normal;
   font-weight: 700;
@@ -29,6 +31,7 @@ section {
   letter-spacing: 0.25em;
   color: var(--primary-text);
   text-decoration: none;
+  margin-left: 12em;
 }
 .navbar .navbar-brand:hover,
 .footer-title a:hover,
@@ -112,9 +115,19 @@ section {
 }
 /* HOME SECTION */
 .home-container {
-  background: url(./img/home_img_1.png) right top no-repeat, url(/img/home_img_2.svg) 75% 85% no-repeat;
-  z-index: 1;
   height: 65vh;
+}
+.img {
+  position: absolute;
+  top: 120px;
+  right: 0;
+  z-index: 2;
+}
+.flower {
+  position: absolute;
+  top: 300px;
+  right: 235px;
+  z-index: 1;
 }
 
 .home-description {
@@ -135,7 +148,7 @@ section {
 }
 .about-us-container {
   position: relative;
-  font-weight: 600px;
+  font-weight: 600;
   font-size: 24px;
   margin-right: 0;
   background: url(./img/who_we_are_section.png) 2.5% 40% no-repeat, url(./img/about_us_img_2.png) right bottom no-repeat;
@@ -308,4 +321,16 @@ input[type="email"]:focus {
 }
 .footer-description {
   margin-top: 1rem;
+}
+.footer :last-child {
+  color: #8d8d8d;
+}
+.footer-bg {
+  background-color: #f2f2f2;
+  width: 100%;
+  height: 630px;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
 }
