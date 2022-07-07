@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@300;400;600;700;900&family=Noto+Sans+JP:wght@400;700&family=Nunito:wght@400;600;700;800&family=Quicksand:wght@300;400;500;600;700&family=Roboto&family=Roboto+Mono:wght@700&family=Rubik:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-text: #ffffff;
+  --secondary-text: #b9b2c4;
+  --primary-bg: #000040;
+  --secondary-bg: #1b0a7d;
+}
+body {
+  background-color: var(--secondary-bg) !important;
+  font-family: "Rubik", sans-serif !important;
+}
+.wrapper {
+  max-width: 428px;
+  border-radius: 60px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  color: var(--primary-text);
+  background-color: var(--primary-bg);
+  box-sizing: border-box;
+  gap: 20px;
+}
+section {
+  margin: 0 30px;
+}
