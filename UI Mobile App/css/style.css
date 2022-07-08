@@ -11,9 +11,12 @@ body {
   font-family: "Rubik", sans-serif !important;
 }
 .wrapper {
+  padding: 40px 20px;
   max-width: 428px;
   border-radius: 60px;
   margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   color: var(--primary-text);
@@ -22,5 +25,100 @@ body {
   gap: 20px;
 }
 section {
-  margin: 0 30px;
+  margin: 0 auto;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-side h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.left-side h6 {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--secondary-text);
+}
+/* Functions Section */
+.card-img {
+  /* width: 80px;
+  height: 80px;
+  border-radius: 25px;
+  background: linear-gradient(180deg, rgba(32, 32, 77, 0.2) 0%, rgba(29, 29, 85, 0.2) 100%);
+  mix-blend-mode: multiply; */
+}
+.card-title {
+  text-transform: capitalize;
+  margin-top: 0.5rem;
+  color: var(--primary-text);
+}
+.functions-container .col-3 a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.functions-container a {
+  text-decoration: none;
+}
+/* Transaction Details Section */
+.transaction-details-container {
+  margin: 0;
+  padding: 0;
+}
+.transaction-title {
+  font-weight: 600;
+  font-size: 20px;
+}
+.view-all {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--secondary-text);
+}
+.transaction-details-container .row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.transaction-details-container .col-9 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.transaction-details-container .card-description {
+  margin-left: 1rem;
+}
+.card-description .card-title,
+.bills {
+  font-weight: 500;
+  font-size: 18px;
+}
+.card-date,
+.hour {
+  color: var(--secondary-text);
+  font-size: 16px;
+  font-weight: 400;
+}
+.bills:before {
+  content: "-$";
+}
+.hour::after {
+  content: " PM";
+}
+.payment-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+/* Tab Bar SECTION */
+.tab-bar-container {
+  width: 388px;
+  height: 66px;
+  background: linear-gradient(180deg, #20204d 0%, #1d1d55 100%);
+  border-radius: 40px;
 }
