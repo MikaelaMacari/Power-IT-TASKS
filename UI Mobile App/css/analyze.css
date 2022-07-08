@@ -1,5 +1,5 @@
 @import url("style.css");
-/* Analyze container */
+/* Header container */
 .analyze-container {
   margin: 0;
 }
@@ -18,9 +18,11 @@
 #months > option {
   background-color: var(--primary-bg);
 }
+/*  Card Container */
 figcaption {
   color: var(--secondary-text);
 }
+/* Total Balance */
 .total-balance-container :nth-child(1) {
   color: var(--secondary-text);
 }

@@ -1,0 +1,33 @@
+/* Balance Container */
+.balance-container {
+  margin: 0;
+}
+.balance-container :nth-child(1) {
+  color: var(--secondary-text);
+}
+.balance-container :nth-child(2) {
+  font-weight: 500;
+  font-size: 32px;
+}
+/*  Card Container */
+.carousel {
+  position: relative;
+}
+#carousel > div.carousel-indicators {
+  bottom: -70px;
+  position: absolute;
+}
+.carousel-inner {
+  margin-bottom: 60px;
+}
+#carousel > div.carousel-indicators > button {
+  margin: 0.5rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #1f1f4e;
+  border: 2px solid #d0cece;
+}
+#carousel > div.carousel-indicators > button.active {
+  background-color: #2680b8;
+}
