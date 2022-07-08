@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Analyze</title>
+    <link rel="icon" href="../img/analyze.png" />
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/analyze.css" />
+    <!-- CSS BOOTSTRAP -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!--Font Awesome KIT-->
+    <script src="https://kit.fontawesome.com/d0af679ce2.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--HEADER SECTION-->
+      <section class="analyze-container">
+        <div class="row">
+          <div class="col-2"><img src="../img/left_arrow.png" alt="" /></div>
+          <div class="col-9 d-flex justify-content-center"><p class="header-title">Analyze</p></div>
+        </div>
+        <div class="row">
+          <div class="col months d-flex justify-content-end">
+            <select name="months" id="months" class="text-capitalize">
+              <option value="oct-feb">oct-feb</option>
+              <option value="feb-jul">feb-jul</option>
+              <option value="aug-jan">aug-jan</option>
+            </select>
+          </div>
+        </div>
+      </section>
+
+      <!--Card SECTION-->
+      <section>
+        <figure>
+          <img src="../img/Dates.png" alt="Dates" style="width: 100%" />
+          <figcaption class="d-flex justify-content-between">
+            <div>Oct</div>
+            <div>Nov</div>
+            <div>Dec</div>
+            <div>Jan</div>
+            <div>Feb</div>
+          </figcaption>
+        </figure>
+      </section>
+      <!--Total Balance SECTION-->
+      <section class="total-balance-container d-flex flex-column justify-content-center align-items-center">
+        <div class="row">Total balance</div>
+        <div class="row">$1.924,35</div>
+      </section>
+
+      <!--TRANSACTION DETAILS SECTION-->
+      <section class="transaction-details-container">
+        <div class="row">
+          <div class="col-9 transaction-title">Transaction Details</div>
+          <div class="col-3 text-end"><a class="view-all">View All</a></div>
+        </div>
+        <div class="row">
+          <div class="col-9">
+            <img src="../img/dribble.png" alt="dribble logo" />
+            <div class="card-description">
+              <div class="card-title">Dribble</div>
+              <div class="card-date">13 jan 22</div>
+            </div>
+          </div>
+          <div class="col-3 payment-details">
+            <div class="bills">102,24</div>
+            <div class="hour">3:24</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-9">
+            <img src="../img/amazon.png" alt="" />
+            <div class="card-description">
+              <div class="card-title">Amazon Shopping</div>
+              <div class="card-date">12 jan 22</div>
+            </div>
+          </div>
+          <div class="col-3 payment-details">
+            <div class="bills">32.24</div>
+            <div class="hour">2:35</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-9">
+            <img src="../img/youtube.png" alt="" />
+            <div class="card-description">
+              <div class="card-title">YouTube TV</div>
+              <div class="card-date">9 jan 22</div>
+            </div>
+          </div>
+          <div class="col-3 payment-details">
+            <div class="bills">20</div>
+            <div class="hour">6:10</div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-9">
+            <img src="../img/paypal.png" alt="" />
+            <div class="card-description">
+              <div class="card-title">Paypal</div>
+              <div class="card-date">7 jan 22</div>
+            </div>
+          </div>
+          <div class="col-3 payment-details">
+            <div class="payment-details">
+              <div class="bills">80</div>
+              <div class="hour">7:00</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--TAB BAR SECTION-->
+      <section class="tab-bar-container">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-around align-items-center">
+            <a href="#"><img src="../img/Home.png" alt="" /></a>
+            <a href="#"><img src="../img/Bookmark.png" alt="" /></a>
+            <a href="#" class="mt-1 ms-2"><img src="../img/Add.png" alt="" /></a>
+            <a href="#"><img src="../img/Notifications.png" alt="" /></a>
+            <a href="#"><img src="../img/Profile.png" alt="" /></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- JavaScript  BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

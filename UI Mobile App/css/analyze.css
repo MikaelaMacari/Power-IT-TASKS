@@ -1,0 +1,30 @@
+@import url("style.css");
+/* Analyze container */
+.analyze-container {
+  margin: 0;
+}
+.header-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+.analyze-container select {
+  background-color: transparent;
+  color: var(--secondary-text);
+  border: none;
+  outline: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+#months > option {
+  background-color: var(--primary-bg);
+}
+figcaption {
+  color: var(--secondary-text);
+}
+.total-balance-container :nth-child(1) {
+  color: var(--secondary-text);
+}
+.total-balance-container :nth-child(2) {
+  font-weight: 500;
+  font-size: 32px;
+}
