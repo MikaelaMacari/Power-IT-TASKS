@@ -189,6 +189,74 @@ input#inputPassword {
 .btn-dislike {
   color: var(--secondary-default);
 }
+
+.menu-card {
+  max-width: 294px;
+}
+.menu-card .card-title,
+.add-to-cart-card .card-title {
+  font-size: 15px;
+  font-weight: 700;
+}
+.menu-card .card-description,
+.add-to-cart-card .card-description {
+  font-size: 10px;
+  font-weight: 400;
+  color: var(--secondary-default);
+}
+.price::before {
+  content: "$";
+}
+.price {
+  font-size: 20px;
+  font-weight: 800;
+}
+.action-btn {
+  width: 27px;
+  height: 27px;
+}
+.secondary-btn {
+  border-radius: 10px;
+  background: var(--primary-light);
+}
+.add-to-cart-card {
+  top: -6.5rem;
+  max-width: 618px;
+}
+.add-btn {
+  padding: 0.5rem 0.8rem;
+}
+.add-btn::before {
+  content: " + ";
+  margin-right: 0.5rem;
+}
+.increase-btn {
+  color: var(--primary-text);
+}
+.decrease-btn {
+  color: var(--neutral-gray) !important;
+}
+.quantity {
+  font-size: 14px;
+  font-weight: 700;
+}
+.margin {
+  margin-bottom: 5rem;
+}
+.carousel-caption h5 {
+  font-size: 32px;
+  font-weight: 700;
+}
+.carousel-caption p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.carousel-indicators button {
+  background-color: var(--primary-white) !important;
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 50%;
+}
 /* Footer SECTION*/
 @media screen and (max-width: 420px) {
   .login-container {

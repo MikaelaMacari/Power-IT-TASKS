@@ -66,101 +66,604 @@
             </div>
           </footer>
         </div>
+
+        <!--Media Banner-->
         <div class="col-xl-8 col-lg-7 col-md-6 d-none d-md-block media-container">
-          <div class="row">
-            <div class="col-6">
-              <div class="card review-card">
-                <ul class="list-group list-group-flush">
-                  <li class="list-group-item rating-item d-flex justify-content-between align-items-center">
-                    <div class="content-left d-flex flex-column align-items-start justify-content-between">
-                      <p class="card-title">Overall rating</p>
-                      <div class="rating-container d-flex align-items-baseline gap-2">
-                        <p class="rating-number">4.2</p>
-                        <div class="rating-stars">
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
-                          <i class="fa-solid fa-star"></i>
+          <div id="carouselCaptions" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-5">
+                    <div class="card review-card">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item rating-item d-flex justify-content-between align-items-center">
+                          <div class="content-left d-flex flex-column align-items-start justify-content-between">
+                            <p class="card-title">Overall rating</p>
+                            <div class="rating-container d-flex align-items-baseline gap-2">
+                              <p class="rating-number">4.2</p>
+                              <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </div>
+                              <p class="votes">3 votes</p>
+                            </div>
+                          </div>
+                          <button type="button" class="btn btn-outline-primary py-2 mb-3">Leave review</button>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="sort-container d-flex">
+                            Sort by:
+                            <select name="sort" id="sort-dropdown">
+                              <option value="volvo">Newest first</option>
+                              <option value="saab">Saab</option>
+                              <option value="mercedes">Mercedes</option>
+                              <option value="audi">Audi</option>
+                            </select>
+                          </div>
+                          <div class="testimonial-container row mt-4">
+                            <div class="col-2">
+                              <img src="./img/avatar_1.png" alt="" />
+                            </div>
+                            <div class="col-10">
+                              <div class="row testimonial-title">Savannah Miles</div>
+                              <div class="row rating-container d-flex align-items-baseline">
+                                <div class="rating-stars col-4 p-0">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="time col-8">10 days ago</p>
+                              </div>
+                              <div class="row testimonial-description me-1">
+                                Lorem ipsum dolor sit amet, adhuc nulla definiebas mei ad, ei doming aperiam delicata est.
+                              </div>
+                              <div class="row">
+                                <div class="col-6 p-0 mt-3">
+                                  <button class="btn-like testimonial-btn me-3"><img src="./img/thumb up filled.png" alt="" class="me-2" />14</button>
+                                  <button class="btn-dislike testimonial-btn"><img src="./img/thumb.png" alt="" class="me-2" />4</button>
+                                </div>
+                                <div class="col-6"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="testimonial-container row mt-4">
+                            <div class="col-2">
+                              <img src="./img/avatar_2.png" alt="" />
+                            </div>
+                            <div class="col-10">
+                              <div class="row testimonial-title">Jacob Jones</div>
+                              <div class="row rating-container d-flex align-items-baseline">
+                                <div class="rating-stars col-4 p-0">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star" style="color: var(--neutral-gray)"></i>
+                                </div>
+                                <p class="time col-8">1 days ago</p>
+                              </div>
+                              <div class="row testimonial-description me-1">
+                                Lorem ipsum dolor sit amet, adhuc nulla definiebas mei ad, ei doming aperiam delicata est.
+                              </div>
+                              <div class="row">
+                                <div class="col-6 p-0 mt-3">
+                                  <button class="btn-like testimonial-btn me-3"><img src="./img/like.png" alt="" class="me-2" />8</button>
+                                  <button class="btn-dislike testimonial-btn"><img src="./img/thumb.png" alt="" class="me-2" />3</button>
+                                </div>
+                                <div class="col-6"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-6 mt-5 ms-4">
+                    <div class="card menu-card mt-5">
+                      <img src="./img/login_1.png" class="m-3" alt="roll set" />
+                      <div class="card-body py-0">
+                        <h5 class="card-title">Roll set</h5>
+                        <p class="card-description">
+                          Ea his sensibus eleifend, mollis iudicabit omittantur id mel. Et cum ignota euismod corpora, et saepe.
+                        </p>
+                        <div class="card-action d-flex justify-content-between align-items-baseline">
+                          <p class="price">22.56</p>
+                          <button class="text-btn secondary-btn action-btn">+</button>
                         </div>
-                        <p class="votes">3 votes</p>
                       </div>
                     </div>
-                    <button type="button" class="btn btn-outline-primary py-2 mb-3">Leave review</button>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="sort-container d-flex">
-                      Sort by:
-                      <select name="sort" id="sort-dropdown">
-                        <option value="volvo">Newest first</option>
-                        <option value="saab">Saab</option>
-                        <option value="mercedes">Mercedes</option>
-                        <option value="audi">Audi</option>
-                      </select>
-                    </div>
-                    <div class="testimonial-container row mt-4">
-                      <div class="col-2">
-                        <img src="./img/avatar_1.png" alt="" />
-                      </div>
-                      <div class="col-10">
-                        <div class="row testimonial-title">Savannah Miles</div>
-                        <div class="row rating-container d-flex align-items-baseline">
-                          <div class="rating-stars col-4 p-0">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                          </div>
-                          <p class="time col-8">10 days ago</p>
+                  </div>
+                </div>
+                <div class="row margin">
+                  <div class="col-12 mt-5 ms-4">
+                    <div class="card add-to-cart-card mt-5 ms-5">
+                      <div class="row g-0">
+                        <div class="col-md-3">
+                          <img src="./img/login_2.png" class="img-fluid rounded-start m-3" alt="..." />
                         </div>
-                        <div class="row testimonial-description">
-                          Lorem ipsum dolor sit amet, adhuc nulla definiebas mei ad, ei doming aperiam delicata est.
-                        </div>
-                        <div class="row">
-                          <div class="col-6 p-0 mt-3">
-                            <button class="btn-like testimonial-btn me-3"><img src="./img/thumb up filled.png" alt="" class="me-2" />14</button>
-                            <button class="btn-dislike testimonial-btn"><img src="./img/thumb.png" alt="" class="me-2" />4</button>
+                        <div class="col-md-9">
+                          <div class="card-body ms-3 pb-0">
+                            <h5 class="card-title">Nigiri set</h5>
+                            <div class="card-text-and-action d-flex justify-content-between align-items-baseline">
+                              <p class="card-description">
+                                Ea his sensibus eleifend, mollis iudicabit omittantur id mel. Et cum ignota euismod corpora, et saepe.
+                              </p>
+                              <button class="text-btn secondary-btn action-btn me-2 decrease-btn">-</button>
+                              <p class="quantity">1</p>
+                              <button class="text-btn secondary-btn action-btn ms-2 increase-btn">+</button>
+                            </div>
+
+                            <div class="card-action d-flex justify-content-between align-items-baseline">
+                              <p class="price">22.56</p>
+                              <button class="text-btn secondary-btn add-btn">Add to cart</button>
+                            </div>
                           </div>
-                          <div class="col-6"></div>
                         </div>
                       </div>
                     </div>
-                  </li>
-                  <li class="list-group-item">
-                    <div class="testimonial-container row mt-4">
-                      <div class="col-2">
-                        <img src="./img/avatar_2.png" alt="" />
-                      </div>
-                      <div class="col-10">
-                        <div class="row testimonial-title">Jacob Jones</div>
-                        <div class="row rating-container d-flex align-items-baseline">
-                          <div class="rating-stars col-4 p-0">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star" style="color: var(--neutral-gray)"></i>
+                  </div>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Leave reviews for all meals</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, magna scaevola his ei. Cum te paulo probatus molestiae, eirmod assentior eum ne, et omnis antiopam
+                    mel.
+                  </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-5">
+                    <div class="card review-card">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item rating-item d-flex justify-content-between align-items-center">
+                          <div class="content-left d-flex flex-column align-items-start justify-content-between">
+                            <p class="card-title">Overall rating</p>
+                            <div class="rating-container d-flex align-items-baseline gap-2">
+                              <p class="rating-number">4.2</p>
+                              <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </div>
+                              <p class="votes">3 votes</p>
+                            </div>
                           </div>
-                          <p class="time col-8">1 days ago</p>
-                        </div>
-                        <div class="row testimonial-description">
-                          Lorem ipsum dolor sit amet, adhuc nulla definiebas mei ad, ei doming aperiam delicata est.
-                        </div>
-                        <div class="row">
-                          <div class="col-6 p-0 mt-3">
-                            <button class="btn-like testimonial-btn me-3"><img src="./img/like.png" alt="" class="me-2" />8</button>
-                            <button class="btn-dislike testimonial-btn"><img src="./img/thumb.png" alt="" class="me-2" />3</button>
+                          <button type="button" class="btn btn-outline-primary py-2 mb-3">Leave review</button>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="sort-container d-flex">
+                            Sort by:
+                            <select name="sort" id="sort-dropdown">
+                              <option value="volvo">Newest first</option>
+                              <option value="saab">Saab</option>
+                              <option value="mercedes">Mercedes</option>
+                              <option value="audi">Audi</option>
+                            </select>
                           </div>
-                          <div class="col-6"></div>
+                          <div class="testimonial-container row mt-4">
+                            <div class="col-2">
+                              <img src="./img/avatar_1.png" alt="" />
+                            </div>
+                            <div class="col-10">
+                              <div class="row testimonial-title">Savannah Miles</div>
+                              <div class="row rating-container d-flex align-items-baseline">
+                                <div class="rating-stars col-4 p-0">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="time col-8">10 days ago</p>
+                              </div>
+                              <div class="row testimonial-description me-1">
+                                Lorem ipsum dolor sit amet, adhuc nulla definiebas mei ad, ei doming aperiam delicata est.
+                              </div>
+                              <div class="row">
+                                <div class="col-6 p-0 mt-3">
+                                  <button class="btn-like testimonial-btn me-3"><img src="./img/thumb up filled.png" alt="" class="me-2" />14</button>
+                                  <button class="btn-dislike testimonial-btn"><img src="./img/thumb.png" alt="" class="me-2" />4</button>
+                                </div>
+                                <div class="col-6"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="testimonial-container row mt-4">
+                            <div class="col-2">
+                              <img src="./img/avatar_2.png" alt="" />
+                            </div>
+                            <div class="col-10">
+                              <div class="row testimonial-title">Jacob Jones</div>
+                              <div class="row rating-container d-flex align-items-baseline">
+                                <div class="rating-stars col-4 p-0">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star" style="color: var(--neutral-gray)"></i>
+                                </div>
+                                <p class="time col-8">1 days ago</p>
+                              </div>
+                              <div class="row testimonial-description me-1">
+                                Lorem ipsum dolor sit amet, adhuc nulla definiebas mei ad, ei doming aperiam delicata est.
+                              </div>
+                              <div class="row">
+                                <div class="col-6 p-0 mt-3">
+                                  <button class="btn-like testimonial-btn me-3"><img src="./img/like.png" alt="" class="me-2" />8</button>
+                                  <button class="btn-dislike testimonial-btn"><img src="./img/thumb.png" alt="" class="me-2" />3</button>
+                                </div>
+                                <div class="col-6"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-6 mt-5 ms-4">
+                    <div class="card menu-card mt-5">
+                      <img src="./img/login_1.png" class="m-3" alt="roll set" />
+                      <div class="card-body py-0">
+                        <h5 class="card-title">Roll set</h5>
+                        <p class="card-description">
+                          Ea his sensibus eleifend, mollis iudicabit omittantur id mel. Et cum ignota euismod corpora, et saepe.
+                        </p>
+                        <div class="card-action d-flex justify-content-between align-items-baseline">
+                          <p class="price">22.56</p>
+                          <button class="text-btn secondary-btn action-btn">+</button>
                         </div>
                       </div>
                     </div>
-                  </li>
-                </ul>
+                  </div>
+                </div>
+                <div class="row margin">
+                  <div class="col-12 mt-5 ms-4">
+                    <div class="card add-to-cart-card mt-5 ms-5">
+                      <div class="row g-0">
+                        <div class="col-md-3">
+                          <img src="./img/login_2.png" class="img-fluid rounded-start m-3" alt="..." />
+                        </div>
+                        <div class="col-md-9">
+                          <div class="card-body ms-3 pb-0">
+                            <h5 class="card-title">Nigiri set</h5>
+                            <div class="card-text-and-action d-flex justify-content-between align-items-baseline">
+                              <p class="card-description">
+                                Ea his sensibus eleifend, mollis iudicabit omittantur id mel. Et cum ignota euismod corpora, et saepe.
+                              </p>
+                              <button class="text-btn secondary-btn action-btn me-2 decrease-btn">-</button>
+                              <p class="quantity">1</p>
+                              <button class="text-btn secondary-btn action-btn ms-2 increase-btn">+</button>
+                            </div>
+
+                            <div class="card-action d-flex justify-content-between align-items-baseline">
+                              <p class="price">22.56</p>
+                              <button class="text-btn secondary-btn add-btn">Add to cart</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-5">
+                    <div class="card review-card">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item rating-item d-flex justify-content-between align-items-center">
+                          <div class="content-left d-flex flex-column align-items-start justify-content-between">
+                            <p class="card-title">Overall rating</p>
+                            <div class="rating-container d-flex align-items-baseline gap-2">
+                              <p class="rating-number">4.2</p>
+                              <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </div>
+                              <p class="votes">3 votes</p>
+                            </div>
+                          </div>
+                          <button type="button" class="btn btn-outline-primary py-2 mb-3">Leave review</button>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="sort-container d-flex">
+                            Sort by:
+                            <select name="sort" id="sort-dropdown">
+                              <option value="volvo">Newest first</option>
+                              <option value="saab">Saab</option>
+                              <option value="mercedes">Mercedes</option>
+                              <option value="audi">Audi</option>
+                            </select>
+                          </div>
+                          <div class="testimonial-container row mt-4">
+                            <div class="col-2">
+                              <img src="./img/avatar_1.png" alt="" />
+                            </div>
+                            <div class="col-10">
+                              <div class="row testimonial-title">Savannah Miles</div>
+                              <div class="row rating-container d-flex align-items-baseline">
+                                <div class="rating-stars col-4 p-0">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="time col-8">10 days ago</p>
+                              </div>
+                              <div class="row testimonial-description me-1">
+                                Lorem ipsum dolor sit amet, adhuc nulla definiebas mei ad, ei doming aperiam delicata est.
+                              </div>
+                              <div class="row">
+                                <div class="col-6 p-0 mt-3">
+                                  <button class="btn-like testimonial-btn me-3"><img src="./img/thumb up filled.png" alt="" class="me-2" />14</button>
+                                  <button class="btn-dislike testimonial-btn"><img src="./img/thumb.png" alt="" class="me-2" />4</button>
+                                </div>
+                                <div class="col-6"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="testimonial-container row mt-4">
+                            <div class="col-2">
+                              <img src="./img/avatar_2.png" alt="" />
+                            </div>
+                            <div class="col-10">
+                              <div class="row testimonial-title">Jacob Jones</div>
+                              <div class="row rating-container d-flex align-items-baseline">
+                                <div class="rating-stars col-4 p-0">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star" style="color: var(--neutral-gray)"></i>
+                                </div>
+                                <p class="time col-8">1 days ago</p>
+                              </div>
+                              <div class="row testimonial-description me-1">
+                                Lorem ipsum dolor sit amet, adhuc nulla definiebas mei ad, ei doming aperiam delicata est.
+                              </div>
+                              <div class="row">
+                                <div class="col-6 p-0 mt-3">
+                                  <button class="btn-like testimonial-btn me-3"><img src="./img/like.png" alt="" class="me-2" />8</button>
+                                  <button class="btn-dislike testimonial-btn"><img src="./img/thumb.png" alt="" class="me-2" />3</button>
+                                </div>
+                                <div class="col-6"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-6 mt-5 ms-4">
+                    <div class="card menu-card mt-5">
+                      <img src="./img/login_1.png" class="m-3" alt="roll set" />
+                      <div class="card-body py-0">
+                        <h5 class="card-title">Roll set</h5>
+                        <p class="card-description">
+                          Ea his sensibus eleifend, mollis iudicabit omittantur id mel. Et cum ignota euismod corpora, et saepe.
+                        </p>
+                        <div class="card-action d-flex justify-content-between align-items-baseline">
+                          <p class="price">22.56</p>
+                          <button class="text-btn secondary-btn action-btn">+</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row margin">
+                  <div class="col-12 mt-5 ms-4">
+                    <div class="card add-to-cart-card mt-5 ms-5">
+                      <div class="row g-0">
+                        <div class="col-md-3">
+                          <img src="./img/login_2.png" class="img-fluid rounded-start m-3" alt="..." />
+                        </div>
+                        <div class="col-md-9">
+                          <div class="card-body ms-3 pb-0">
+                            <h5 class="card-title">Nigiri set</h5>
+                            <div class="card-text-and-action d-flex justify-content-between align-items-baseline">
+                              <p class="card-description">
+                                Ea his sensibus eleifend, mollis iudicabit omittantur id mel. Et cum ignota euismod corpora, et saepe.
+                              </p>
+                              <button class="text-btn secondary-btn action-btn me-2 decrease-btn">-</button>
+                              <p class="quantity">1</p>
+                              <button class="text-btn secondary-btn action-btn ms-2 increase-btn">+</button>
+                            </div>
+
+                            <div class="card-action d-flex justify-content-between align-items-baseline">
+                              <p class="price">22.56</p>
+                              <button class="text-btn secondary-btn add-btn">Add to cart</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-5">
+                    <div class="card review-card">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item rating-item d-flex justify-content-between align-items-center">
+                          <div class="content-left d-flex flex-column align-items-start justify-content-between">
+                            <p class="card-title">Overall rating</p>
+                            <div class="rating-container d-flex align-items-baseline gap-2">
+                              <p class="rating-number">4.2</p>
+                              <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                              </div>
+                              <p class="votes">3 votes</p>
+                            </div>
+                          </div>
+                          <button type="button" class="btn btn-outline-primary py-2 mb-3">Leave review</button>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="sort-container d-flex">
+                            Sort by:
+                            <select name="sort" id="sort-dropdown">
+                              <option value="volvo">Newest first</option>
+                              <option value="saab">Saab</option>
+                              <option value="mercedes">Mercedes</option>
+                              <option value="audi">Audi</option>
+                            </select>
+                          </div>
+                          <div class="testimonial-container row mt-4">
+                            <div class="col-2">
+                              <img src="./img/avatar_1.png" alt="" />
+                            </div>
+                            <div class="col-10">
+                              <div class="row testimonial-title">Savannah Miles</div>
+                              <div class="row rating-container d-flex align-items-baseline">
+                                <div class="rating-stars col-4 p-0">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                </div>
+                                <p class="time col-8">10 days ago</p>
+                              </div>
+                              <div class="row testimonial-description me-1">
+                                Lorem ipsum dolor sit amet, adhuc nulla definiebas mei ad, ei doming aperiam delicata est.
+                              </div>
+                              <div class="row">
+                                <div class="col-6 p-0 mt-3">
+                                  <button class="btn-like testimonial-btn me-3"><img src="./img/thumb up filled.png" alt="" class="me-2" />14</button>
+                                  <button class="btn-dislike testimonial-btn"><img src="./img/thumb.png" alt="" class="me-2" />4</button>
+                                </div>
+                                <div class="col-6"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="list-group-item">
+                          <div class="testimonial-container row mt-4">
+                            <div class="col-2">
+                              <img src="./img/avatar_2.png" alt="" />
+                            </div>
+                            <div class="col-10">
+                              <div class="row testimonial-title">Jacob Jones</div>
+                              <div class="row rating-container d-flex align-items-baseline">
+                                <div class="rating-stars col-4 p-0">
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star"></i>
+                                  <i class="fa-solid fa-star" style="color: var(--neutral-gray)"></i>
+                                </div>
+                                <p class="time col-8">1 days ago</p>
+                              </div>
+                              <div class="row testimonial-description me-1">
+                                Lorem ipsum dolor sit amet, adhuc nulla definiebas mei ad, ei doming aperiam delicata est.
+                              </div>
+                              <div class="row">
+                                <div class="col-6 p-0 mt-3">
+                                  <button class="btn-like testimonial-btn me-3"><img src="./img/like.png" alt="" class="me-2" />8</button>
+                                  <button class="btn-dislike testimonial-btn"><img src="./img/thumb.png" alt="" class="me-2" />3</button>
+                                </div>
+                                <div class="col-6"></div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-6 mt-5 ms-4">
+                    <div class="card menu-card mt-5">
+                      <img src="./img/login_1.png" class="m-3" alt="roll set" />
+                      <div class="card-body py-0">
+                        <h5 class="card-title">Roll set</h5>
+                        <p class="card-description">
+                          Ea his sensibus eleifend, mollis iudicabit omittantur id mel. Et cum ignota euismod corpora, et saepe.
+                        </p>
+                        <div class="card-action d-flex justify-content-between align-items-baseline">
+                          <p class="price">22.56</p>
+                          <button class="text-btn secondary-btn action-btn">+</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row margin">
+                  <div class="col-12 mt-5 ms-4">
+                    <div class="card add-to-cart-card mt-5 ms-5">
+                      <div class="row g-0">
+                        <div class="col-md-3">
+                          <img src="./img/login_2.png" class="img-fluid rounded-start m-3" alt="..." />
+                        </div>
+                        <div class="col-md-9">
+                          <div class="card-body ms-3 pb-0">
+                            <h5 class="card-title">Nigiri set</h5>
+                            <div class="card-text-and-action d-flex justify-content-between align-items-baseline">
+                              <p class="card-description">
+                                Ea his sensibus eleifend, mollis iudicabit omittantur id mel. Et cum ignota euismod corpora, et saepe.
+                              </p>
+                              <button class="text-btn secondary-btn action-btn me-2 decrease-btn">-</button>
+                              <p class="quantity">1</p>
+                              <button class="text-btn secondary-btn action-btn ms-2 increase-btn">+</button>
+                            </div>
+
+                            <div class="card-action d-flex justify-content-between align-items-baseline">
+                              <p class="price">22.56</p>
+                              <button class="text-btn secondary-btn add-btn">Add to cart</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Fourth slide label</h5>
+                  <p>Some representative placeholder content for the fourth slide.</p>
+                </div>
               </div>
             </div>
-            <div class="col-6"></div>
           </div>
         </div>
       </div>
