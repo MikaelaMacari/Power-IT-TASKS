@@ -14,10 +14,9 @@
   --error-default: #ff5c60;
   --neutral-gray: #c7c8d2;
 }
-body {
-}
-.wrapper {
-  max-width: 1440px;
+.wrapper,
+header {
+  max-width: 1110px;
   margin: 0 auto;
   position: relative;
   font-family: Nunito, Quicksand, Roboto, monospace !important;
