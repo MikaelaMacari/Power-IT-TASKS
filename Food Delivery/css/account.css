@@ -1,0 +1,57 @@
+@import "./style.css";
+
+.account-settings-container .title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Settings Container */
+
+.settings-container .selected {
+  background-color: var(--primary-light);
+  border: 2px solid var(--primary-bg);
+  color: var(--primary-text);
+}
+.settings-container .card .title {
+  font-size: 14px;
+  font-weight: 700;
+}
+.settings-container .subtitle {
+  font-size: 13px;
+  color: var(--secondary-text);
+}
+
+/* Account Container */
+.account-container .card-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+.account-container .subtitle,
+label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--secondary-text);
+}
+.btn {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+}
+
+.avatar-container .btn-outline-secondary {
+  border: none !important;
+}
+.form-check-input {
+  background-color: var(--primary-default) !important;
+}
+.btn-outline-danger {
+  color: var(--error-default) !important;
+  border: 1px solid var(--error-default) !important;
+}
+.btn-outline-danger:hover {
+  color: var(--primary-white) !important;
+  background-color: var(--error-default) !important;
+}
+.btn-primary:hover {
+  color: var(--primary-default) !important;
+  background-color: transparent !important;
+}

@@ -1,9 +1,5 @@
 @import "./style.css";
 
-/* HEADER SECTION */
-/* .navbar {
-  margin: 0 10rem;
-} */
 .search-bar {
   background-color: #edeef2 !important;
 }
@@ -41,9 +37,7 @@ input[type="search"]::-webkit-search-results-decoration {
   font-weight: 700 !important;
   color: var(--primary-text) !important;
 }
-/* .navbar > ul > li:nth-child(5) > a {
-  padding-right: 0;
-} */
+
 .nav-link:hover {
   color: var(--primary-default) !important;
 }

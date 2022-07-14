@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Wodies</title>
-    <link rel="icon" href="./img/home_logo.svg" />
+    <title>Account</title>
+    <link rel="icon" href="../img/settings_1.png" />
     <!-- CSS Styles -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../css/account.css" />
+
     <!-- CSS BOOTSTRAP -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
@@ -18,22 +21,186 @@
     <script src="https://kit.fontawesome.com/d0af679ce2.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="wrapper">
-      <!--HEADER SECTION-->
-      <header>
-        <div class="img">
-          <img src="./img/logo.png" alt="" />
+    <!--HEADER SECTION-->
+    <header>
+      <nav class="navbar navbar-expand-lg d-flex align-items-baseline justify-content-around">
+        <div class="container-fluid pe-0 d-lg-flex justify-content-lg-between d-flex justify-content-around">
+          <a class="navbar-brand" href="#">
+            <img src="../img/logo.png" alt="" width="80" height="40" class="d-inline-block align-text-top" />
+          </a>
+          <form class="d-none d-sm-none d-md-flex position-relative ms-5" role="search">
+            <input class="form-control me-2 search-bar" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn search-btn" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+          <ul class="navbar-nav ms-auto me-2 d-lg-none d-flex flex-row">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <button type="button" class="text-btn order-btn position-relative mt-1 me-2">
+                  <img src="../img/shopping bag.png" alt="" />
+                  <span class="position-absolute top-0 start-100 translate-middle badge order-badge"
+                    >4
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </button>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link pe-0" href="#"><img src="../img/avatar.png" alt="" /></a>
+            </li>
+          </ul>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-baseline">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Restaurants</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Deals</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My orders</a>
+              </li>
+              <li class="nav-item d-lg-flex d-none">
+                <a class="nav-link" href="#">
+                  <button type="button" class="text-btn order-btn position-relative mb-0">
+                    <img src="../img/shopping bag.png" alt="" />
+                    <span class="position-absolute top-0 start-100 translate-middle badge order-badge"
+                      >4
+                      <span class="visually-hidden">unread messages</span>
+                    </span>
+                  </button>
+                </a>
+              </li>
+              <li class="nav-item d-lg-flex d-none">
+                <a class="nav-link pe-0" href="#"><img src="../img/avatar.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </header>
+      </nav>
+    </header>
+    <div class="divider"></div>
 
-      <!--Login SECTION-->
-      <section class="login-container"></section>
+    <div class="wrapper">
+      <!--Settings SECTION-->
 
-      <!--FOOTER -->
-      <section class="footer mb-5 mt-5">
-        <div class="row"><div class="col-12 text-center">© 2020 WOODIES</div></div>
+      <section class="account-settings-container mt-4 row gx-3 p-3">
+        <div class="col-md-4 settings-container mb-3">
+          <h4 class="title">Settings</h4>
+          <div class="card d-flex flex-row justify-content-start align-items-center px-3 rounded-4 mb-3 selected">
+            <img src="../img/settings_1.png" alt="" />
+            <div class="description ms-2">
+              <h6 class="title mb-0 mt-3">Account</h6>
+              <p class="subtitle">Personal information</p>
+            </div>
+          </div>
+          <div class="card d-flex flex-row justify-content-start align-items-center px-3 rounded-4 mb-3">
+            <img src="../img/settings_2.png" alt="" />
+            <div class="description ms-2">
+              <h6 class="title mb-0 mt-3">Address</h6>
+              <p class="subtitle">Shippings addresses</p>
+            </div>
+          </div>
+          <div class="card d-flex flex-row justify-content-start align-items-center px-3 rounded-4 mb-3">
+            <img src="../img/settings_3.png" alt="" />
+            <div class="description ms-2">
+              <h6 class="title mb-0 mt-3">Payment method</h6>
+              <p class="subtitle">Connected credit cards</p>
+            </div>
+          </div>
+          <div class="card d-flex flex-row justify-content-start align-items-center px-3 rounded-4">
+            <img src="../img/settings_4.png" alt="" />
+            <div class="description ms-2">
+              <h6 class="title mb-0 mt-3">Security</h6>
+              <p class="subtitle">Password, 2FA</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 account-container">
+          <h4 class="title">Account</h4>
+          <div class="card rounded-4 p-3">
+            <h5 class="card-title">Personal information</h5>
+            <p class="subtitle">Avatar</p>
+            <div class="d-flex flex-row justify-content-start align-items-center avatar-container">
+              <img src="../img/main avatar.png" alt="" />
+              <button type="button" class="btn btn-outline-primary py-2 mb-3 ms-3">Change</button>
+              <button type="button" class="btn btn-outline-secondary py-2 mb-3 ms-3">Remove</button>
+            </div>
+            <form class="row g-3 mt-1 mb-5">
+              <div class="col-md-6">
+                <label for="inputFirstName" class="form-label">First name</label>
+                <input type="text" class="form-control" id="inputFirstName" />
+              </div>
+              <div class="col-md-6">
+                <label for="inputLastName" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="inputLastName" />
+              </div>
+              <div class="col-md-6">
+                <label for="inputEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" />
+              </div>
+              <div class="col-md-6">
+                <label for="inputTel" class="form-label">Phone number</label>
+                <input type="tel" class="form-control" id="inputTel" />
+              </div>
+            </form>
+            <h5 class="card-title mb-3">Email notifications</h5>
+            <div class="email-notifications row">
+              <div class="col-12 col-md-6">
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="newDealsChecked" checked />
+                  <label class="form-check-label" for="newDealsChecked"> New deals </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="newRestaurantsChecked" checked />
+                  <label class="form-check-label" for="newRestaurantsChecked">New restaurants </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="orderStatuses" checked />
+                  <label class="form-check-label" for="orderStatuses"> Order statuses </label>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="passwordChanges" checked />
+                  <label class="form-check-label" for="passwordChanges"> Password changes </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="specialOffers" checked />
+                  <label class="form-check-label" for="specialOffers">Special offers </label>
+                </div>
+                <div class="form-check mb-3">
+                  <input class="form-check-input" type="checkbox" value="" id="newsletter" checked />
+                  <label class="form-check-label" for="newsletter"> Newsletter </label>
+                </div>
+              </div>
+            </div>
+            <div class="divider d-none d-sm-block"></div>
+            <div class="action mt-4 d-sm-flex flex-sm-row justify-content-sm-between d-flex flex-column">
+              <button type="button" class="btn btn-outline-danger py-2 mb-3">Log out</button>
+              <div class="divider d-block mb-3 d-sm-none"></div>
+              <div class="right d-flex justify-content-between">
+                <button type="button" class="btn btn-outline-secondary py-2 mb-3">Discard changes</button>
+                <button class="btn btn-primary py-2 ms-3 mb-3" type="submit">Save changes</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
+
     <!-- JavaScript  BOOTSTRAP -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
